@@ -1286,7 +1286,7 @@ img {
 .sec-title h2 {
     position: relative;
     display: block;
-    font-size: 56px;
+    font-size: 50px;
     line-height: 1.2em;
     color: #333333;
     padding-bottom: 25px;
@@ -1606,8 +1606,8 @@ img {
     font-size: 24px;
     color: #9bba1f;
     font-weight: 800;
-    padding-bottom: 35px;
-    margin-bottom: 28px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .info-section .info-block h3 a {
@@ -1623,7 +1623,7 @@ img {
     color: #f73f3f;
 }
 
-.info-section .info-block h3:after {
+/*.info-section .info-block h3:after {
     position: absolute;
     left: 0;
     bottom: 0px;
@@ -1633,7 +1633,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     content: "";
-}
+}*/
 
 .info-section .info-block:nth-child(2) h3 {
     color: #00cbc9;
@@ -5554,3 +5554,9 @@ img {
     text-transform: uppercase;
     color: #fd0712;
 }
+.margin-container {
+     position: static;
+     padding: 0px 15px;
+     margin-left: 0px;
+    margin-right: 0px;
+ }

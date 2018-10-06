@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 
+    <script src="./script/jquery.js"></script>
+
     <link rel="shortcut icon" href="http://t.commonsupport.com/prime-kidz/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="http://t.commonsupport.com/prime-kidz/images/favicon.png" type="image/x-icon">
     <!-- Responsive -->
@@ -197,6 +199,68 @@
             </div>
         </section>
         <!--End Main Slider-->
+
+        <section class="staff-section">
+            <div class="sec-title text-center">
+                <h2><span class="text-sky newssaw">Khuyến nghị lực chọn khóa học theo độ tuổi</span></h2>
+            </div>
+            <div class="auto-container">
+                <img src="images/resource/buts%20chif.png">
+            </div>
+        </section>
+
+        <section class="staff-section">
+            <div class="margin-container">
+                <div class="sec-title text-center">
+                    <h2><span class="text-sky newssaw">Nền tảng xây dựng hệ thống chương trình</span></h2>
+                </div>
+                <section class="info-section no-pd-top">
+                    <div class="row clearfix">
+                        <!-- Staff Block -->
+                        <div class="info-block col-md-4 col-sm-6 col-xs-12 platform">
+                            <div class="inner-box platform-height">
+                                <div class="icon-box"><img src="./images/resource/MIT2.png" alt=""></div>
+                                <p>Viện công nghệ massachusetts</p>
+                                <h3>Ngôn ngữ lập trình kéo thả Scratch phổ biến nhất thế giới</h3>
+                                <p>+32.000.000.000 chương trình chia sẻ</p>
+                                <p>+29.000.000.000 người dùng đăng ký</p>
+                            </div>
+                        </div>
+                        <div class="info-block col-md-4 col-sm-6 col-xs-12 platform">
+                            <div class="inner-box platform-height">
+                                <div class="icon-box"><img src="./images/resource/makeblock2.png" alt=""></div>
+                                <p>makeblock</p>
+                                <h3>Robot hỗ trợ giáo dục STEM phổ biến nhất thế giới</h3>
+                                <p>+140 quốc gia</p>
+                                <p>+20.000 trường học</p>
+                            </div>
+                        </div>
+                        <div class="info-block col-md-4 col-sm-6 col-xs-12 platform">
+                            <div class="inner-box platform-height">
+                                <div class="icon-box"><img src="./images/resource/logo%20moi%20vuong%20nho.png" alt=""></div>
+                                <p>Học viện VIETSTEM</p>
+                                <h3>Hệ thống giáo trình trực tuyến và giáo dục STEM đầu tiên tại việt nam</h3>
+                                <p>+5 bộ sách</p>
+                                <p>+1250 bài học trực tuyến</p>
+                            </div>
+                            <script type="text/javascript">
+                                $(document).on('ready', function () {
+                                    var heights = $("div.platform").map(function ()
+                                    {
+                                        return $(this).height();
+                                    }).get();
+                                    maxHeight = Math.max.apply(null, heights);
+                                    var vNavimg = document.getElementsByClassName("platform-height");
+                                    for(var i=0;i<vNavimg.length;i++){
+                                        vNavimg[i].style.height = maxHeight+"px";;
+                                    }
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
 
         <section class="testimonial-section" style="background-image: url(images/background/3.png);">
             <div class="auto-container">
@@ -405,7 +469,6 @@
 
     <!--Scroll to top-->
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
-    <script src="./script/jquery.js"></script>
     <script src="./script/bootstrap.min.js"></script>
     <!--Revolution Slider-->
     <script src="./script/jquery.themepunch.revolution.min.js"></script>
