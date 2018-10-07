@@ -200,6 +200,172 @@
         </section>
         <!--End Main Slider-->
 
+        <section class="classes-section" style="background-image: url(images/background/1.jpg);">
+            <div class="auto-container">
+                <div class="sec-title text-center">
+                    <span class="icon-1 icon-star-2"></span>
+                    <span class="icon-2 doll-4"></span>
+                    <h2><span class="text-white">Các khóa học lập trình</span></h2>
+                </div>
+
+                <div class="row clearfix">
+                    <!-- Class Block -->
+                    <div class="class-block col-md-4 col-sm-6 col-xs-12 khoahoc-height">
+                        <div class="inner-box khoahoc-h">
+                            <div class="image-box img-box-heigh"><a href="#"><img src="images/resource/k1.jpg" alt=""></a></div>
+                            <div class="lower-content">
+                                <h3><a href="#">Robot mBot</a></h3>
+                                <p>Starts November 10</p>
+                                <span>2.700.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Class Block -->
+                    <div class="class-block col-md-4 col-sm-6 col-xs-12 khoahoc-height">
+                        <div class="inner-box khoahoc-h">
+                            <div class="image-box img-box-heigh"><a href="#"><img src="images/resource/k2.jpg" alt=""></a></div>
+                            <div class="lower-content">
+                                <h3><a href="#">Robot Condey Rocky</a></h3>
+                                <p>Starts November 10</p>
+                                <span>2.700.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Class Block -->
+                    <div class="class-block col-md-4 col-sm-6 col-xs-12 khoahoc-height">
+                        <div class="inner-box khoahoc-h">
+                            <div class="image-box img-box-heigh"><a href="#"><img src="images/resource/k3.png" alt=""></a></div>
+                            <div class="lower-content">
+                                <h3><a href="#">Robot mRobot Ranger</a></h3>
+                                <p>Starts November 10</p>
+                                <span>2.700.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $(document).on('ready', function () {
+                            var heights = $("div.khoahoc-height").map(function ()
+                            {
+                                return $(this).height();
+                            }).get();
+                            maxHeight = Math.max.apply(null, heights);
+                            var vNavimg = document.getElementsByClassName("khoahoc-h");
+                            for(var i=0;i<vNavimg.length;i++){
+                                vNavimg[i].style.height = maxHeight+"px";;
+                            }
+                            var heights = $("div.img-box-heigh").map(function ()
+                            {
+                                return $(this).height();
+                            }).get();
+                            maxHeight = Math.max.apply(null, heights);
+                            var vNavimg = document.getElementsByClassName("img-box-heigh");
+                            for(var i=0;i<vNavimg.length;i++){
+                                vNavimg[i].style.height = maxHeight+"px";;
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="class-block col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
+                <a href=#" class="theme-btn btn-style-one">Xem tất cả</a>
+            </div>
+        </section>
+
+        <section class="classes-section" style="background-image: url(images/background/2.jpg);">
+            <div class="auto-container">
+                <div class="sec-title text-center">
+                    <span class="icon-1 icon-star-2"></span>
+                    <span class="icon-2 doll-4"></span>
+                    <h2><span class="text-pink">Các công cụ học tập</span></h2>
+                </div>
+
+                <div class="row clearfix">
+                    <!-- Class Block -->
+                    <div class="class-block col-md-3 col-sm-6 col-xs-12 cc-heigh">
+                        <div class="inner-box cc-h">
+                            <div class="image-box img-box-cc"><a href="#"><img src="images/resource/bot1.jpg" alt=""></a></div>
+                            <div class="lower-content">
+                                <h3><a href="#">Robot mBot</a></h3>
+                                <p>Starts November 10</p>
+                                <span>2.700.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Class Block -->
+                    <div class="class-block col-md-3 col-sm-6 col-xs-12 cc-heigh">
+                        <div class="inner-box cc-h">
+                            <div class="image-box img-box-cc"><a href="#"><img src="images/resource/bot2.jpg" alt=""></a></div>
+                            <div class="lower-content">
+                                <h3><a href="#">Robot Condey Rocky</a></h3>
+                                <p>Starts November 10</p>
+                                <span>2.700.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Class Block -->
+                    <div class="class-block col-md-3 col-sm-6 col-xs-12 cc-heigh">
+                        <div class="inner-box cc-h">
+                            <div class="image-box img-box-cc"><a href="#"><img src="images/resource/bot3.jpg" alt=""></a></div>
+                            <div class="lower-content">
+                                <h3><a href="#">Robot mRobot Ranger</a></h3>
+                                <p>Starts November 10</p>
+                                <span>2.700.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Class Block -->
+                    <div class="class-block col-md-3 col-sm-6 col-xs-12 cc-heigh">
+                        <div class="inner-box cc-h">
+                            <div class="image-box img-box-cc"><a href="#"><img src="images/resource/bot4.jpg" alt=""></a></div>
+                            <div class="lower-content">
+                                <h3><a href="#">Robot AirBlock</a></h3>
+                                <p>Starts November 10</p>
+                                <span>2.700.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $(document).on('ready', function () {
+                            var heights = $("div.cc-heigh").map(function ()
+                            {
+                                return $(this).height();
+                            }).get();
+                            maxHeight = Math.max.apply(null, heights);
+                            var vNavimg = document.getElementsByClassName("cc-h");
+                            for(var i=0;i<vNavimg.length;i++){
+                                vNavimg[i].style.height = maxHeight+"px";;
+                            }
+                            var heights = $("div.img-box-cc").map(function ()
+                            {
+                                return $(this).height();
+                            }).get();
+                            maxHeight = Math.max.apply(null, heights);
+                            var vNavimg = document.getElementsByClassName("img-box-cc");
+                            for(var i=0;i<vNavimg.length;i++){
+                                vNavimg[i].style.height = maxHeight+"px";;
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="class-block col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
+                <a href=#" class="theme-btn btn-style-one">Xem tất cả</a>
+            </div>
+        </section>
+
+
+        <div class="img-desktop">
+            <img src="images/resource/P3.jpg">
+        </div>
+        <div class="img-mobile">
+            <img src="images/resource/P3-dt.png">
+        </div>
+
         <section class="staff-section">
             <div class="sec-title text-center">
                 <h2><span class="text-sky newssaw">Khuyến nghị lực chọn khóa học theo độ tuổi</span></h2>
