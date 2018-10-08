@@ -5623,3 +5623,24 @@ div.text-center span.price{
     font-weight: bold;
     color: #16ad0a !important;
 }
+.page-title-about-us {
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    overflow: hidden;
+    background: #00a652;
+    padding: 25px 0px;
+}
+.page-title-about-us h1 {
+     position: relative;
+     font-size: 56px;
+     line-height: 1em;
+     font-weight: 400;
+     margin-bottom: 10px;
+     text-transform: capitalize;
+     -webkit-text-stroke: 2px #343f0a;
+     -ms-text-stroke: 2px #343f0a;
+     -moz-text-stroke: 2px #343f0a;
+ }
