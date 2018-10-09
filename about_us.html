@@ -16,6 +16,9 @@
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 
+    <link href="./style/about-us.css" rel="stylesheet">
+
+
     <script src="./script/jquery.js"></script>
 
     <link rel="shortcut icon" href="http://t.commonsupport.com/prime-kidz/images/favicon.png" type="image/x-icon">
@@ -174,59 +177,52 @@
             <h1 class="text-white">About Us</h1>
         </div>
     </section>
-
-    <section class="classes-section">
+    <section class="info-section classes-section">
         <div class="auto-container">
             <div class="row clearfix">
-                <!-- Class Block -->
-                <div class="class-block col-md-4 col-sm-6 col-xs-12 khoahoc-height">
-                    <div class="inner-box khoahoc-h">
-                        <div class="image-box img-box-heigh"><a href="#"><img src="images/resource/k1.jpg" alt=""></a></div>
-                        <div class="lower-content">
-                            <h3 class="title-lt"><a href="#">Lập trình Scratch</a></h3>
-                            <p class="age">Age: <span class="age-number">8+</span></p>
-                        </div>
+                <!-- Info Block -->
+                <div class="info-block-about col-md-4 col-sm-6 col-xs-12 about-height">
+                    <div class="inner-box-about about-h">
+                        <div class="icon-box img-about-height"><img src="./images/resource/about1.jpg" alt=""></div>
+                        <h3><a href="#">Learning Environment</a></h3>
+                        <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip aute irure dolor repreh derit.</p>
                     </div>
                 </div>
 
-                <!-- Class Block -->
-                <div class="class-block col-md-4 col-sm-6 col-xs-12 khoahoc-height">
-                    <div class="inner-box khoahoc-h">
-                        <div class="image-box img-box-heigh"><a href="#"><img src="images/resource/k2.jpg" alt=""></a></div>
-                        <div class="lower-content">
-                            <h3 class="title-lt"><a href="#">Lập trình Robot</a></h3>
-                            <p class="age">Age: <span class="age-number">8+</span></p>
-                        </div>
+                <!-- Info Block -->
+                <div class="info-block-about col-md-4 col-sm-6 col-xs-12 about-height">
+                    <div class="inner-box-about about-h">
+                        <div class="icon-box img-about-height"><img src="./images/resource/about2.jpg" alt=""></div>
+                        <h3><a href="#">Learning Environment</a></h3>
+                        <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip aute irure dolor repreh derit.</p>
                     </div>
                 </div>
 
-                <!-- Class Block -->
-                <div class="class-block col-md-4 col-sm-6 col-xs-12 khoahoc-height">
-                    <div class="inner-box khoahoc-h">
-                        <div class="image-box img-box-heigh"><a href="#"><img src="images/resource/k3.png" alt=""></a></div>
-                        <div class="lower-content">
-                            <h3 class="title-lt"><a href="#">Lập trình App Inventor</a></h3>
-                            <p class="age">Age: <span class="age-number">10+</span></p>
-                        </div>
+                <!-- Info Block -->
+                <div class="info-block-about col-md-4 col-sm-6 col-xs-12 about-height">
+                    <div class="inner-box-about about-h">
+                        <div class="icon-box img-about-height"><img src="./images/resource/about3.png" alt=""></div>
+                        <h3><a href="#">Learning Environment</a></h3>
+                        <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip aute irure dolor repreh derit.</p>
                     </div>
                 </div>
                 <script type="text/javascript">
                     $(document).on('ready', function () {
-                        var heights = $("div.khoahoc-height").map(function ()
+                        var heights = $("div.about-height").map(function ()
                         {
                             return $(this).height();
                         }).get();
                         maxHeight = Math.max.apply(null, heights);
-                        var vNavimg = document.getElementsByClassName("khoahoc-h");
+                        var vNavimg = document.getElementsByClassName("about-h");
                         for(var i=0;i<vNavimg.length;i++){
                             vNavimg[i].style.height = maxHeight+"px";;
                         }
-                        var heights = $("div.img-box-heigh").map(function ()
+                        var heights = $("div.img-about-height").map(function ()
                         {
                             return $(this).height();
                         }).get();
                         maxHeight = Math.max.apply(null, heights);
-                        var vNavimg = document.getElementsByClassName("img-box-heigh");
+                        var vNavimg = document.getElementsByClassName("img-about-height");
                         for(var i=0;i<vNavimg.length;i++){
                             vNavimg[i].style.height = maxHeight+"px";
                         }
@@ -235,7 +231,6 @@
             </div>
         </div>
     </section>
-
     <section class="fact-counter-section" style="background-image:url(./images/background/about_background.jpg);">
         <div class="auto-container">
             <!-- Fact Counter -->
@@ -244,7 +239,7 @@
                     <!--Column-->
                     <div class="column col-md-3 col-sm-6 col-xs-12">
                         <div class="count-outer count-box counted">
-                            <span class="count-text" data-speed="1000" data-stop="206">+2345</span>
+                            <span class="count-text count-thanhvien"></span>
                             <h4 class="counter-title">Thành viên</h4>
                         </div>
                     </div>
@@ -252,7 +247,7 @@
                     <!--Column-->
                     <div class="column col-md-3 col-sm-6 col-xs-12">
                         <div class="count-outer count-box counted">
-                            <span class="count-text" data-speed="3500" data-stop="5684">+1250</span>
+                            <span class="count-text count-baigiang"></span>
                             <h4 class="counter-title">Bài giảng</h4>
                         </div>
                     </div>
@@ -260,7 +255,7 @@
                     <!--Column-->
                     <div class="column col-md-3 col-sm-6 col-xs-12">
                         <div class="count-outer count-box counted">
-                            <span class="count-text" data-speed="2000" data-stop="730">+5</span>
+                            <span class="count-text count-dausach"></span>
                             <h4 class="counter-title">Đầu sách</h4>
                         </div>
                     </div>
@@ -268,11 +263,31 @@
                     <!--Column-->
                     <div class="column col-md-3 col-sm-6 col-xs-12">
                         <div class="count-outer count-box counted">
-                            <span class="count-text" data-speed="2500" data-stop="1572">+7</span>
+                            <span class="count-text count-robot"></span>
                             <h4 class="counter-title">Robot</h4>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="staff-section">
+        <div class="auto-container">
+            <div class="sec-title sec-title-about text-center">
+                <span class="icon-1 doll-5"></span>
+                <span class="icon-2 icon-pencil-2"></span>
+                <h2 class="text-uppercase">Hoạt Động</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="staff-section" style="background: #00a652;">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <span class="icon-1 doll-5"></span>
+                <span class="icon-2 icon-pencil-2"></span>
+                <h2 class="text-uppercase" style="color: #fff;">Dịch vụ</h2>
             </div>
         </div>
     </section>
@@ -442,6 +457,8 @@
 <!--slick-->
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="./script/count.js"></script>
+
 <script type="text/javascript">
     $(document).on('ready', function () {
         $(".regular").slick({
