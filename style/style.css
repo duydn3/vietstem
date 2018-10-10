@@ -1332,22 +1332,22 @@ img {
 }
 
 .text-parrot {
-    color: #a4c122;
+    color: #a4c122 !important;
 }
 
 .text-orange {
-    color: #ee7b00;
+    color: #ee7b00 !important;
 }
 .text-sky {
-    color: #00cbc9;
+    color: #00cbc9 !important;
 }
 
 .text-pink {
-    color: #f73f3f;
+    color: #f73f3f !important;
 }
 
 .text-white {
-    color: #fff;
+    color: #fff !important;
 }
 /***
 
