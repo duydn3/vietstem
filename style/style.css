@@ -2622,7 +2622,7 @@ img {
 }
 
 .accordion-box .block .acc-btn.active {
-    background-color: #9bba1f;
+    background-color: #00a650;
     color: #ffffff;
     border: 0;
 }
@@ -5640,7 +5640,4 @@ div.text-center span.price{
      font-weight: 400;
      margin-bottom: 10px;
      text-transform: capitalize;
-     -webkit-text-stroke: 2px #343f0a;
-     -ms-text-stroke: 2px #343f0a;
-     -moz-text-stroke: 2px #343f0a;
  }
