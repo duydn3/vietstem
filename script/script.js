@@ -187,6 +187,9 @@
 			}
 			
 			if ($(this).next('.acc-content').is(':visible')){
+				$(outerBox).find('.accordion .acc-btn').removeClass('active');
+				$(outerBox).children('.accordion').removeClass('active-block');
+				$(this).next('.acc-content').slideUp(300);	
 				return false;
 			}else{
 				$(this).addClass('active');
