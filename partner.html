@@ -151,10 +151,10 @@
                 <h3 class="text-white">Khi giới thiệu khách hàng mua khóa học tại VietStem</h3>
                 <h3 class="text-white">Bạn nhận 20% trên giá trị của mỗi đơn hàng</h3>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 form-group text-right">
-                    <button type="submit" class="theme-btn btn-style-submit">Đăng ký</button>
+                    <button type="submit" class="theme-btn btn-style-submit"  data-toggle="modal" data-target="#myModalRegister">Đăng ký</button>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 form-group text-left">
-                    <button type="submit" class="theme-btn btn-style-submit">Đăng nhập</button>
+                    <button type="submit" class="theme-btn btn-style-submit"  data-toggle="modal" data-target="#myModalLogin">Đăng nhập</button>
                 </div>
             </div>
         </div>
@@ -431,11 +431,139 @@
     </footer>
     <!-- End Main Footer -->
 
+    <!-- Modal Login -->
+    <div id="myModalLogin" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="panel panel-default" >
+                    <div class="panel-heading">
+                        <div class="panel-title text-center"><i class="glyphicon glyphicon-lock"></i> Login Account</div>
+                    </div>
+                    <div class="panel-body" >
+
+                        <form name="form" id="form" class="form-horizontal" enctype="multipart/form-data" method="POST">
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="user" type="email" class="form-control" name="user" required value="" placeholder="Email đăng nhập">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="password" type="password" class="form-control" name="password" required placeholder="Mật khẩu">
+                            </div>
+
+                            <div class="form-group">
+                                <!-- Button -->
+                                <div class="col-sm-12 controls text-center">
+                                    <button type="submit" href="#" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i> Log in</button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Login -->
+    <div id="myModalRegister" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="panel panel-default" >
+                    <div class="panel-heading">
+                        <div class="panel-title text-center">Đăng ký tài khoản đối tác</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="well">
+                                   <!-- <form id="loginForm" method="POST" action="#" novalidate="novalidate">-->
+                                        <div class="form-group">
+                                            <label for="fullname" class="control-label">Họ và tên*</label>
+                                            <input type="text" class="form-control" id="fullname" name="fullname" value="" required="" title="Nhập họ và tên" placeholder="Nhập họ và tên">
+                                            <span class="help-block"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phonenumber" class="control-label">Số điện thoại*</label>
+                                            <input type="text" class="form-control" id="phonenumber" name="phonenumber" value="" required="" title="Nhập số điện thoại" placeholder="Nhập số điện thoại">
+                                            <span class="help-block"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email" class="control-label">Email*</label>
+                                            <input type="email" class="form-control" id="email" name="email" value="" required="" title="Nhập email" placeholder="Nhập email">
+                                            <span class="help-block"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="address" class="control-label">Địa chỉ*</label>
+                                            <input type="text" class="form-control" id="address" name="address" value="" required="" title="Nhập địa chỉ" placeholder="Nhập địa chỉ">
+                                            <span class="help-block"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="website" class="control-label">Website</label>
+                                            <input type="text" class="form-control" id="website" name="website" value="" title="Nhập địa chỉ website" placeholder="Nhập địa chỉ website">
+                                            <span class="help-block"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="facebook" class="control-label">Giới thiệu bản thân (Cung cấp facebook của bạn)</label>
+                                            <textarea id="facebook" name="facebook" class="form-control" placeholder="Giới thiệu bản thân (Cung cấp facebook của bạn)"></textarea>
+                                            <span class="help-block"></span>
+                                        </div>
+                                        <button type="submit" class="btn btn-success btn-block" id="btn_register" data-toggle="modal" data-target="#myModalConfirmRegister">Đăng ký tài khoản của bạn <span class="glyphicon glyphicon-chevron-right"></span></button>
+                                    <!--</form>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
+
+<!-- Confirm register-->
+<div id="myModalConfirmRegister" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Cảm ơn bản đã đăng ký làm đại lý công ty CP Early Start!</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="panel panel-default" >
+                <div class="modal-body">
+                    <p>Chúng tôi gửi phản hồi vào mail của bạn. Bạn vui lòng đọc thư và làm theo hướng dẫn, hoặc thao tác ở ngay đây</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Tạo mã giảm giá</button>
+                    <button type="button" class="btn btn-danger">Không, Cảm ơn!</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <!--End pagewrapper-->
 
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="./script/bootstrap.min.js"></script>
 <!--Revolution Slider-->
 <script src="./script/jquery.themepunch.revolution.min.js"></script>
@@ -457,10 +585,9 @@
 <script src="./script/wow.js"></script>
 <script src="./script/script.js"></script>
 <!--slick-->
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script src="./script/count.js"></script>
-
+<!-- jQuery -->
 <script type="text/javascript">
     $(document).on('ready', function () {
         $(".regular").slick({
@@ -471,6 +598,14 @@
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
+        });
+    });
+    $(function () {
+        $("#btn_register").click(function () {
+            $('#myModalRegister').modal('hide');
+        });
+        $("#btn_login_now").click(function () {
+            $('#myModalConfirmRegister').modal('hide');
         });
     });
 </script>
