@@ -1954,7 +1954,7 @@ img {
     text-align: center;
 }
 
-.facilities .facility-block:nth-child(1):before {
+/*.facilities .facility-block:nth-child(1):before {
     border-bottom: 1px dotted #64dfde;
 }
 
@@ -1965,6 +1965,9 @@ img {
 .facilities .facility-block:nth-child(3):before {
     border-bottom: 1px dotted #64dfde;
 }
+.facilities .facility-block:nth-child(4):before {
+    border-bottom: 1px dotted #64dfde;
+}*/
 
 .facilities .facility-block .image-box {
     position: relative;
@@ -3899,7 +3902,7 @@ img {
     position: absolute;
     left: 50%;
     top: 0%;
-    content: url(../images/icons/circle.png);
+    /*content: url(../images/icons/circle.png);*/
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);

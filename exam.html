@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 
-    <link href="./style/faqs.css" rel="stylesheet">
+    <link href="./style/exam.css" rel="stylesheet">
 
 
     <script src="./script/jquery.js"></script>
@@ -68,10 +68,10 @@
                                     <li>
                                         <a href="partner.html">Đối tác</a>
                                     </li>
-                                    <li>
+                                    <li class="current">
                                         <a href="exam.html">Dự thi</a>
                                     </li>
-                                    <li class="dropdown current"><a href="#">Hướng dẫn</a>
+                                    <li class="dropdown"><a href="#">Hướng dẫn</a>
                                         <ul>
                                             <li><a href="faqs.html">FAQs</a></li>
                                             <li><a href="#">Blog</a></li>
@@ -112,10 +112,10 @@
                                 <li>
                                     <a href="partner.html">Đối tác</a>
                                 </li>
-                                <li>
+                                <li class="current">
                                     <a href="exam.html">Dự thi</a>
                                 </li>
-                                <li class="dropdown current"><a href="#">Hướng dẫn</a>
+                                <li class="dropdown"><a href="#">Hướng dẫn</a>
                                     <ul>
                                         <li><a href="faqs.html">FAQs</a></li>
                                         <li><a href="#">Blog</a></li>
@@ -134,104 +134,286 @@
     <!--End Main Header -->
 
 
-    <section class="page-title-about-us classes-section">
-        <div class="sec-title auto-container">
-            <h1 class="text-white">Các câu hỏi thường gặp</h1>
-            <span class="icon-2 doll-4"></span>
+    <section class="page-title-about-us">
+        <div class="auto-container">
+            <h1 class="text-white">Các sản phẩm dự thi</h1>
         </div>
     </section>
-    <section class="info-section classes-section">
+    <section class="gallery-grid-section">
         <div class="auto-container">
-            <div class="row clearfix">
-                <div class="faqs">
-                    <ul class="accordion-box">
-                        <!--Block-->
-                        <li class="accordion block">
-                            <div class="acc-btn">
-                                <div class="icon-outer"><span class="icon flaticon-add"></span></div>Ipsum dolor sit amet adipisicing elit sed do eiusmod tempor
-                            </div>
-                            <div class="acc-content">
-                                <div class="content">
-                                    <p>Cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidata non proident, sunt culpa qui officia deserunt mollit animid est laborum. Sed perspiciatis unde omnis iste natus error volup accusantium doloremque laudantium sed ipsum tempor totam rem.</p>
-                                </div>
-                            </div>
-                        </li>
+            <!--MixitUp Galery-->
+            <div class="mixitup-gallery">
 
-                        <!--Block-->
-                        <li class="accordion block">
-                            <div class="acc-btn">
-                                <div class="icon-outer"><span class="icon flaticon-add"></span></div>Lorem dolor sit amet consectetur eiusmod tempor adipisicing elit
-                            </div>
-                            <div class="acc-content">
-                                <div class="content">
-                                    <p>Cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidata non proident, sunt culpa qui officia deserunt mollit animid est laborum. Sed perspiciatis unde omnis iste natus error volup accusantium doloremque laudantium sed ipsum tempor totam rem.</p>
-                                </div>
-                            </div>
-                        </li>
+                <!--Filter-->
+                <div class="filters text-center clearfix">
+                    <ul class="filter-tabs filter-btns clearfix">
+                        <li class="filter active"><a data-toggle="tab" href="#new_app"> Ứng dụng mới dự thi</a></li>
+                        <li class="filter"><a data-toggle="tab" href="#ratings_app"> Bảng xếp hạng ứng dụng</a></li>
+                    </ul>
+                </div> 
+                <div class="row clearfix facilities">
+                    <div class="facility-block col-md-3 col-sm-6 col-xs-12">
+                        <div class="inner-box form-group">
+                            <select>
+                                <option value="" selected>Tên cuộc thi</option>
+                            </select>
+                        </div>
+                    </div>
 
-                        <!--Block-->
-                        <li class="accordion block">
-                            <div class="acc-btn">
-                                <div class="icon-outer"><span class="icon flaticon-add"></span></div>Minim veniam quis nostrud exercitation ullamco laboris
-                            </div>
-                            <div class="acc-content">
-                                <div class="content">
-                                    <p>Cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidata non proident, sunt culpa qui officia deserunt mollit animid est laborum. Sed perspiciatis unde omnis iste natus error volup accusantium doloremque laudantium sed ipsum tempor totam rem.</p>
-                                </div>
-                            </div>
-                        </li>
+                    <div class="facility-block col-md-3 col-sm-6 col-xs-12">
+                        <div class="inner-box form-group">
+                            <select>
+                                    <option value="" selected>Tỉnh/Thành phố</option>
+                            </select>
+                        </div>
+                    </div>
 
-                        <!--Block-->
-                        <li class="accordion block">
-                            <div class="acc-btn">
-                                <div class="icon-outer"><span class="icon flaticon-add"></span></div>Reprehenderit in voluptate velit esse cillum dolore
-                            </div>
-                            <div class="acc-content">
-                                <div class="content">
-                                    <p>Cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidata non proident, sunt culpa qui officia deserunt mollit animid est laborum. Sed perspiciatis unde omnis iste natus error volup accusantium doloremque laudantium sed ipsum tempor totam rem.</p>
-                                </div>
-                            </div>
-                        </li>
+                    <div class="facility-block col-md-3 col-sm-6 col-xs-12">
+                        <div class="inner-box form-group">
+                            <select>
+                                    <option value="" selected>Quận/Huyện/TT</option>
+                            </select>
+                        </div>
+                    </div>
 
-
-                    </ul><!--End Accordion Box-->
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="info-section classes-section">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <div class="form-column col-md-2">
-                    <span class="icon-form doll-form"></span>
-                </div>
-                <div class="form-column col-md-8 col-sm-12 col-xs-12 contact-form">
-                    <!--Contact Form-->
-                    <form method="post" action="sendemail.php" id="contact-form" novalidate="novalidate">
+                    <div class="facility-block col-md-3 col-sm-6 col-xs-12">
+                        <div class="inner-box form-group">
+                            <select>
+                                    <option value="" selected>Trường</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>              
+                <div class="tab-content">
+                    <div id="new_app" class="tab-pane fade in active">
                         <div class="row clearfix">
-                            <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                                <input type="text" name="username" placeholder="Full Name *" required="">
+                            <!-- Class Block -->
+                            <div class="class-block col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="image-box"><a href="about.html"><img src="images/resource/class-1.jpg" alt=""></a></div>
+                                    <div class="lower-content">
+                                        <div class="circle-slide" style="background-image: url('images/MEGA.png')">
+                                        </div>
+                                        <h3><a href="about.html">Infants Learning</a></h3>
+                                        <p>by <span>Starts November 10</span></p>
+                                        <ul class="post-info">
+                                            <li>
+                                                <span class="fa fa-heart" style="color: #ff5f4f"></span>
+                                                <br/>
+                                                <span>2</span> 
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-eye" style="color: #00bcf3"></span>
+                                                <br/>
+                                                <span>6</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                                <input type="email" name="email" placeholder="Email address *" required="">
+            
+                            <!-- Class Block -->
+                            <div class="class-block col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="image-box"><a href="about.html"><img src="images/resource/class-2.jpg" alt=""></a></div>
+                                    <div class="lower-content">
+                                        <div class="circle-slide" style="background-image: url('images/MEGA.png')">
+                                        </div>
+                                        <h3><a href="about.html">Toddler Classes</a></h3>
+                                        <p>by <span>Starts November 10</span></p>
+                                        <ul class="post-info">
+                                            <li>
+                                                <span class="fa fa-heart" style="color: #ff5f4f"></span>
+                                                <br/>
+                                                <span>2</span> 
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-eye" style="color: #00bcf3"></span>
+                                                <br/>
+                                                <span>6</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
-                                <textarea name="message" placeholder="Message"></textarea>
+            
+                            <!-- Class Block -->
+                            <div class="class-block col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="image-box"><a href="about.html"><img src="images/resource/class-3.jpg" alt=""></a></div>
+                                    <div class="lower-content">
+                                        <div class="circle-slide" style="background-image: url('images/MEGA.png')">
+                                        </div>
+                                        <h3><a href="about.html">Early Preschool</a></h3>
+                                        <p>by <span>Starts November 10</span></p>
+                                        <ul class="post-info">
+                                            <li>
+                                                <span class="fa fa-heart" style="color: #ff5f4f"></span>
+                                                <br/>
+                                                <span>2</span> 
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-eye" style="color: #00bcf3"></span>
+                                                <br/>
+                                                <span>6</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group text-center">
-                                <button type="submit" class="theme-btn btn-style-submit">Submit</button>
-                                <span class="icon-submit doll-submit"></span>
+            
+                            <!-- Class Block -->
+                            <div class="class-block col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="image-box"><a href="about.html"><img src="images/resource/class-4.jpg" alt=""></a></div>
+                                    <div class="lower-content">
+                                        <div class="circle-slide" style="background-image: url('images/MEGA.png')">
+                                        </div>
+                                        <h3><a href="about.html">Nursery Classes</a></h3>
+                                        <p>by <span>Starts November 10</span></p>
+                                        <ul class="post-info">
+                                            <li>
+                                                <span class="fa fa-heart" style="color: #ff5f4f"></span>
+                                                <br/>
+                                                <span>2</span> 
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-eye" style="color: #00bcf3"></span>
+                                                <br/>
+                                                <span>6</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                        <!-- Styled Pagination -->
+                        <div class="styled-pagination text-center">
+                            <ul class="clearfix">
+                                <li class="prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                <li><a href="#" class="active">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="ratings_app" class="tab-pane fade">
+                        <div class="row clearfix">
+                            <!-- Class Block -->
+                            <div class="class-block col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="image-box"><a href="about.html"><img src="images/resource/class-1.jpg" alt=""></a></div>
+                                    <div class="lower-content">
+                                        <div class="circle-slide" style="background-image: url('images/MEGA.png')">
+                                        </div>
+                                        <h3><a href="about.html">Infants Learning</a></h3>
+                                        <p>by <span>Starts November 10</span></p>
+                                        <ul class="post-info">
+                                            <li>
+                                                <span class="fa fa-heart" style="color: #ff5f4f"></span>
+                                                <br/>
+                                                <span>2</span> 
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-eye" style="color: #00bcf3"></span>
+                                                <br/>
+                                                <span>6</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Class Block -->
+                            <div class="class-block col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="image-box"><a href="about.html"><img src="images/resource/class-2.jpg" alt=""></a></div>
+                                    <div class="lower-content">
+                                        <div class="circle-slide" style="background-image: url('images/MEGA.png')">
+                                        </div>
+                                        <h3><a href="about.html">Toddler Classes</a></h3>
+                                        <p>by <span>Starts November 10</span></p>
+                                        <ul class="post-info">
+                                            <li>
+                                                <span class="fa fa-heart" style="color: #ff5f4f"></span>
+                                                <br/>
+                                                <span>2</span> 
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-eye" style="color: #00bcf3"></span>
+                                                <br/>
+                                                <span>6</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Class Block -->
+                            <div class="class-block col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="image-box"><a href="about.html"><img src="images/resource/class-3.jpg" alt=""></a></div>
+                                    <div class="lower-content">
+                                        <div class="circle-slide" style="background-image: url('images/MEGA.png')">
+                                        </div>
+                                        <h3><a href="about.html">Early Preschool</a></h3>
+                                        <p>by <span>Starts November 10</span></p>
+                                        <ul class="post-info">
+                                            <li>
+                                                <span class="fa fa-heart" style="color: #ff5f4f"></span>
+                                                <br/>
+                                                <span>2</span> 
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-eye" style="color: #00bcf3"></span>
+                                                <br/>
+                                                <span>6</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Class Block -->
+                            <div class="class-block col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="image-box"><a href="about.html"><img src="images/resource/class-4.jpg" alt=""></a></div>
+                                    <div class="lower-content">
+                                        <div class="circle-slide" style="background-image: url('images/MEGA.png')">
+                                        </div>
+                                        <h3><a href="about.html">Nursery</a></h3>
+                                        <p>by <span>Starts November 10</span></p>
+                                        <ul class="post-info">
+                                            <li>
+                                                <span class="fa fa-heart" style="color: #ff5f4f"></span>
+                                                <br/>
+                                                <span>2</span> 
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-eye" style="color: #00bcf3"></span>
+                                                <br/>
+                                                <span>6</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Styled Pagination -->
+                    <div class="styled-pagination text-center">
+                        <ul class="clearfix">
+                            <li class="prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="form-column col-md-2"></div>
             </div>
         </div>
     </section>
-
     <!-- Main Footer -->
     <img src="./images/footer.png" alt="" style="margin-bottom: -1px;padding-top: 120px;">
     <footer class="main-footer">
