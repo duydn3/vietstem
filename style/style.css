@@ -2070,7 +2070,7 @@ img {
 .classes-section {
     position: relative;
     background-color: #f8f8f8;
-    padding: 105px 0 80px;
+    padding: 36px 0 80px;
 }
 
 .classes-section .sec-title {
@@ -2767,7 +2767,7 @@ img {
 
 .staff-section {
     position: relative;
-    padding: 110px 0 50px;
+    padding: 36px 0 50px;
 }
 
 .staff-section .sec-title {
@@ -2904,7 +2904,7 @@ img {
 
 .testimonial-section {
     position: relative;
-    padding: 105px 0 130px;
+    padding: 36px 0 130px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -5781,4 +5781,27 @@ div.text-center span.price{
     width: 100%;
     height: 60px;
     margin-top: -90px;
+}
+.slick-slide{
+    opacity: 1;
+}
+.slick-prev:before {
+    content: "\f053" !important;
+    font-family: FontAwesome !important;
+    font-size: 42px !important;
+    line-height: 1;
+    opacity: .75;
+    color: white !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} 
+.slick-next:before {
+    content: "\f054" !important;
+    font-family: FontAwesome !important;
+    font-size: 42px !important;
+    line-height: 1;
+    opacity: .75;
+    color: white !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
