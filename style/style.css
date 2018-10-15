@@ -5785,7 +5785,7 @@ div.text-center span.price{
 .slick-slide{
     opacity: 1;
 }
-.slick-prev:before {
+.regular > .slick-prev:before {
     content: "\f053" !important;
     font-family: FontAwesome !important;
     font-size: 42px !important;
@@ -5795,7 +5795,7 @@ div.text-center span.price{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 } 
-.slick-next:before {
+.regular > .slick-next:before {
     content: "\f054" !important;
     font-family: FontAwesome !important;
     font-size: 42px !important;
@@ -5804,4 +5804,29 @@ div.text-center span.price{
     color: white !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.regular-tool > .slick-prev:before {
+    content: "\f0d9" !important;
+    font-family: FontAwesome !important;
+    font-size: 42px !important;
+    line-height: 1;
+    opacity: .75;
+    color: red !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} 
+.regular-tool > .slick-next:before {
+    content: "\f0da" !important;
+    font-family: FontAwesome !important;
+    font-size: 42px !important;
+    line-height: 1;
+    opacity: .75;
+    color: red !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 767px){
+    .staff-section, .classes-section, .info-section {
+        padding: 60px 0 75px !important;
+    }
 }
