@@ -54,6 +54,11 @@ s*/
 @import url('jquery-ui.css');
 @import url('jquery.fancybox.min.css');
 
+@font-face {
+    font-family: 'FontFooter';
+    src: url('../fonts/VNF-Comic Sans.ttf') format('truetype');
+}
+
 /***
 
 ====================================================================
@@ -194,7 +199,7 @@ ul, li {
     border-radius: 26px;
     color: #de3434;
     font-size: 16px;
-    font-weight: 800;
+    /*font-weight: 800;*/
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px;
@@ -208,7 +213,7 @@ ul, li {
     border-radius: 26px;
     color: #f6780a;
     font-size: 16px;
-    font-weight: 800;
+    /*font-weight: 800;*/
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px;
@@ -718,7 +723,7 @@ img {
     float: left;
     left: 0px;
     z-index: 10;
-    padding: 35px 0px;
+    padding: 15px 0px;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
@@ -770,7 +775,7 @@ img {
     position: relative;
     float: left;
     margin-left: 40px;
-    padding: 52px 0px;
+    padding: 25px 0px;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
@@ -1001,10 +1006,9 @@ img {
     z-index: 5;
     display: none;
 }
-
 .main-header .nav-outer .btn-box {
     float: right;
-    padding: 43px 0;
+    padding: 20px 0;
     margin-left: 40px;
 }
 
@@ -1314,7 +1318,7 @@ img {
 .sec-title h2 {
     position: relative;
     display: block;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1.2em;
     color: #333333;
     padding-bottom: 25px;
@@ -1362,6 +1366,9 @@ img {
 
 .text-white {
     color: #fff !important;
+}
+.text-gray{
+    color: rgb(105, 105, 110)!important;
 }
 /***
 
@@ -1587,7 +1594,7 @@ img {
 
 .info-section {
     position: relative;
-    padding: 120px 0 80px;
+    padding: 120px 0 0;
 }
 
 .info-section.no-pd-top {
@@ -1635,7 +1642,7 @@ img {
     position: relative;
     font-size: 24px;
     color: #9bba1f;
-    font-weight: 800;
+    font-weight: bold;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
@@ -1868,11 +1875,11 @@ img {
 
 .fact-counter .count-outer .count-text {
     position: relative;
-    font-size: 72px;
+    font-size: 70px;
     line-height: 1em;
     display: block;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: FontCount;
 }
 
 .fact-counter .column .counter-title {
@@ -2069,12 +2076,12 @@ img {
 
 .classes-section {
     position: relative;
-    background-color: #f8f8f8;
-    padding: 36px 0 80px;
+    background-color: #fff;
+    padding: 36px 0 30px;
 }
 
 .classes-section .sec-title {
-    margin-bottom: 70px;
+    margin-bottom: 15px;
 }
 
 /*.doll-4 {
@@ -2771,7 +2778,7 @@ img {
 }
 
 .staff-section .sec-title {
-    margin-bottom: 55px;
+    margin-bottom: 0px;
 }
 
 /*.doll-5 {
@@ -3590,7 +3597,7 @@ img {
 
 .video-feature-sec {
     position: relative;
-    padding-bottom: 120px;
+    padding-bottom: 50px;
 }
 
 .video-feature-sec .video-column,
@@ -3722,11 +3729,11 @@ img {
 
 .learning-skills {
     position: relative;
-    padding: 110px 0 0px;
+    padding: 50px 0 0px;
 }
 
 .learning-skills .sec-title {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .learning-skills .sec-title .icon-1 {
@@ -3834,7 +3841,7 @@ img {
 
 .gallery-full-width {
     position: relative;
-    padding: 155px 0 100px;
+    padding: 90px 0 100px;
 }
 
 .gallery-full-width.no-pd-bottom {
@@ -4061,7 +4068,7 @@ img {
 
 .gallery-grid-section {
     position: relative;
-    padding: 110px 0;
+    padding: 30px 0;
 }
 
 .gallery-grid-section .row {
@@ -4588,7 +4595,8 @@ img {
     color: #fff;
     text-transform: capitalize;
     padding-bottom: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 38px;
+    font-family: FontFooter !important;
 }
 
 .main-footer .footer-column .widget-title:before {
@@ -4753,7 +4761,7 @@ img {
 
 .main-footer .contact-info-list {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .main-footer .contact-info-list li {
@@ -4763,7 +4771,7 @@ img {
     line-height: 24px;
     color: #fff;
     padding-left: 35px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     font-weight: 400;
 }
 
@@ -5533,6 +5541,7 @@ img {
 .widget-title-footer {
     color: #fff;
     margin-bottom: 15px;
+    font-family: FontFooter;
 }
 
 @media screen and (min-width: 992px) {
@@ -5567,12 +5576,12 @@ img {
 }
 .install-app-slide .icon {
     margin-left: 20px;
-    padding: 12px;
+    padding: 6px;
     background-color: #fff;
     display: inline-block;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px;
     text-align: center;
     font-size: 32px;
 }
@@ -5780,7 +5789,7 @@ div.text-center span.price{
     position: absolute;
     width: 100%;
     height: 60px;
-    margin-top: -90px;
+    margin-top: -82px;
 }
 .slick-slide{
     opacity: 1;

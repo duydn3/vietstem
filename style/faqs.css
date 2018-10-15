@@ -1,16 +1,17 @@
 .classes-section .sec-title .icon-2 {
     position: absolute;
     left: 80%;
-    top: 30px;
+    top: 4px;
 }
 .doll-4 {
     background-image: url(../images/icons/answers.gif);
-    height: 130px;
-    width: 236px;
+    height: 125px;
+    width: 220px;
     background-size: 100% 100%;
 }
 .page-title-about-us h1 {
-    padding-top: 60px;
+    padding-top: 44px;
+    padding-bottom: 20px;
 }
 .page-title-about-us {
     padding: 0px 0px;
@@ -43,8 +44,25 @@
     top: 50px;
 }
 .doll-form {
-    background-image: url(../images/icons/child.jpg);
-    height: 280px;
+    background-image: url(../images/icons/child.png);
+    height: 200px;
     width: 236px;
     background-size: 100% 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .doll-submit{
+        display: none;
+    }
+    .doll-form{
+        display: none;
+    }
+    .doll-4{
+        display: none;
+    }
+    .page-title-about-us h1 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 24px;
+    }
 }
