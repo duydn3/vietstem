@@ -203,6 +203,20 @@ ul, li {
     border-color: #f39e9e;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
+.btn-style-border-slide{
+    background-color: #e8cfbb;
+    border-radius: 26px;
+    color: #f6780a;
+    font-size: 16px;
+    font-weight: 800;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-width: 2px;
+    border-color: #e8cfbb;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
 
 .btn-style-one:hover {
     background: #ee7b00;
@@ -5551,6 +5565,17 @@ img {
     text-align: center;
     font-size: 32px;
 }
+.install-app-slide .icon {
+    margin-left: 20px;
+    padding: 12px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 32px;
+}
 
 .slider {
     width: 50%;
@@ -5750,4 +5775,10 @@ div.text-center span.price{
     background: #fff;
     cursor: pointer;
     display: block;
+}
+.outside {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    margin-top: -90px;
 }
