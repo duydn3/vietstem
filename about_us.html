@@ -74,8 +74,13 @@
                                     <li class="dropdown"><a href="#">Hướng dẫn</a>
                                         <ul>
                                             <li><a href="faqs.html">FAQs</a></li>
-                                            <li><a href="#">Blog</a></li>
                                         </ul>
+                                    </li>
+                                    <li class="hidden-lg hidden-md">
+                                        <a data-toggle="modal" data-target="#myModalRegister">Đăng ký</a>
+                                    </li>
+                                    <li class="hidden-lg hidden-md">
+                                        <a data-toggle="modal" data-target="#myModalLogin" title="">Đăng nhập</a>
                                     </li>
                                 </ul>
                             </div>
@@ -84,10 +89,10 @@
 
                         <!-- Call btn -->
                         <div class="btn-box">
-                            <a href="#" class="call-btn" title="">Đăng ký</a>
+                            <a href="#" class="call-btn" title="" id="btn_register" data-toggle="modal" data-target="#myModalRegister">Đăng ký</a>
                         </div>
                         <div class="btn-box">
-                            <a href="#" class="call-btn" title="">Đăng nhập</a>
+                            <a href="#" class="call-btn" id="btn_login" data-toggle="modal" data-target="#myModalLogin" title="">Đăng nhập</a>
                         </div>
                     </div>
                 </div>
@@ -118,11 +123,10 @@
                                 <li class="dropdown"><a href="#">Hướng dẫn</a>
                                     <ul>
                                         <li><a href="faqs.html">FAQs</a></li>
-                                        <li><a href="#">Blog</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Đăng ký</a></li>
-                                <li><a href="#">Đăng nhập</a></li>
+                                <li><a href="#" data-toggle="modal" id="btn_register" data-target="#myModalRegister">Đăng ký</a></li>
+                                <li><a href="#" data-toggle="modal" id="btn_login" data-target="#myModalLogin" >Đăng nhập</a></li>
                             </ul>
                         </div>
                     </nav>
