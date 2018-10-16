@@ -2077,7 +2077,7 @@ img {
 .classes-section {
     position: relative;
     background-color: #fff;
-    padding: 36px 0 30px;
+    padding: 36px 0 90px;
 }
 
 .classes-section .sec-title {
@@ -3782,7 +3782,7 @@ img {
     font-size: 22px;
     line-height: 1.2em;
     color: #333333;
-    font-weight: 800;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
@@ -3904,7 +3904,7 @@ img {
 .mixitup-gallery .filters li {
     position: relative;
     display: inline-block;
-    font-size: 16px;
+    font-size: 23px;
     color: #aaaaaa;
     line-height: 1.2em;
     cursor: pointer;
@@ -5837,5 +5837,18 @@ div.text-center span.price{
 @media only screen and (max-width: 767px){
     .staff-section, .classes-section, .info-section {
         padding: 60px 0 75px !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .install-app-slide{
+        padding-left: 220px;
+    }
+    .img-desktop > img{
+        max-height: 615px;
+        width: 100%;
+    }
+    .img-butchi > img{
+        max-height: 615px;
     }
 }
